@@ -309,6 +309,7 @@ async function readExecutionConfiguration(execution) {
         let timePeriod
         if (timePeriodFilter === undefined) {
             timePeriod = process.env.TIME_PERIOD
+            timePeriodFilter = process.env.TIME_PERIOD
         } else {
             timePeriod = timePeriodFilter
         }
